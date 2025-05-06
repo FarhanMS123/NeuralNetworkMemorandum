@@ -21,3 +21,11 @@ curl -L -o forge3-Linux-x86_64.sh https://github.com/conda-forge/miniforge/relea
 bash forge3-Linux-x86_64.sh
 
 rm forge3-Linux-x86_64.sh
+
+# https://dev.to/worldlinetech/a-guide-to-nodejs-notebooks-410c
+# conda install -c conda-forge jupyter
+conda activate base
+# conda install -c conda-forge jupyter ipykernel
+conda install nodejs
+npm install -g ijavascript
+ijsinstall

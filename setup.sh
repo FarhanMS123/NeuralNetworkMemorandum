@@ -21,3 +21,22 @@ curl -L -o forge3-Linux-x86_64.sh https://github.com/conda-forge/miniforge/relea
 bash forge3-Linux-x86_64.sh
 
 rm forge3-Linux-x86_64.sh
+
+# conda init
+. ~/.bashrc
+
+# conda install -c conda-forge jupyter
+conda activate base
+# conda install -c conda-forge jupyter ipykernel
+
+# https://dev.to/worldlinetech/a-guide-to-nodejs-notebooks-410c
+conda install conda-forge::nodejs conda-forge::node-gyp
+npm install -g ijavascript
+ijsinstall
+
+# https://medium.com/@joloiuy/exploring-the-go-language-with-jupyter-notebooks-796ca36f8d0c
+conda install conda-forge::go
+go install github.com/janpfeifer/gonb@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/gopls@latest
+gonb --install

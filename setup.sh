@@ -29,6 +29,8 @@ rm forge3-Linux-x86_64.sh
 conda activate base
 # conda install -c conda-forge jupyter ipykernel
 
+# https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+
 # https://dev.to/worldlinetech/a-guide-to-nodejs-notebooks-410c
 conda install conda-forge::nodejs conda-forge::node-gyp
 npm install -g ijavascript

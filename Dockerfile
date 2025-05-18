@@ -17,8 +17,11 @@ RUN conda env create -f environment.yml
 RUN conda run -n base python -m pip install -r requirements.txt
 
 # RUN TMPDIR=$(mktemp -d)
-RUN rsync -av --exclude 'content' ./ content/
-RUN conda run -n base jupyter lite build --contents content --output-dir /home/dist
+# RUN rsync -av --exclude 'content' ./ content/
+# RUN cp -a $(ls -A | grep -v '^content$') content/
+# shopt -s extglob && cp -r !("content") content/
+
+RUN conda run -n base jupyter lite build --contents ./ --output-dir /home/dist
 
 FROM nginx as serve
 

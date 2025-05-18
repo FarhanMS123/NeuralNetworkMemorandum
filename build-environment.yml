@@ -10,3 +10,4 @@ dependencies:
 
   - python-libarchive-c
   - jupyterlab_server
+  - mamba == 1

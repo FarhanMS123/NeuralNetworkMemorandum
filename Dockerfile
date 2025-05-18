@@ -8,6 +8,7 @@ RUN mkdir -p /home/tmp
 WORKDIR /home/app
 COPY . .
 
+RUN conda install -c conda-forge mamba=1
 # RUN conda update -n base -c conda-forge conda
 # RUN conda clean --all --yes
 
@@ -23,7 +24,7 @@ RUN conda run -n build-env python -m pip install -r requirements.txt
 
 # RUN rm -rf /home/tmp/*
 # RUN TMPDIR=$(mktemp -d)
-RUN conda run -n build-env jupyter lite build --clean --contents content --output-dir /home/dist
+RUN conda run -n build-env jupyter lite build --contents content --output-dir /home/dist
 
 FROM nginx as serve
 

@@ -1,0 +1,11 @@
+1. [jupyterlite/demo: JupyterLite demo deployed to GitHub Pages 🚀](https://github.com/jupyterlite/demo/tree/main)
+2. [jupyterlite/xeus-lite-demo: JupyterLite template repository with xeus kernels and pre-installed packages](https://github.com/jupyterlite/xeus-lite-demo)
+   - [Packages — Quetz - the fast conda package server!](https://beta.mamba.pm/channels/conda-forge?tab=packages)
+3. [JupyterLite — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/)
+4. [How-To Guides — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/howto/index.html)
+   - [Adding kernels — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html)
+   - [#kernels — Using an existing JupyterLite deployment — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/quickstart/using.html#kernels)
+   - [List of available JupyterLite kernels? · jupyterlite/jupyterlite · Discussion #968](https://github.com/jupyterlite/jupyterlite/discussions/968)
+5. [Deploy your first JupyterLite website on GitHub Pages — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/quickstart/deploy.html)
+   - [Adding extensions — JupyterLite 0.5.1 documentation](https://jupyterlite.readthedocs.io/en/stable/howto/configure/simple_extensions.html)
+   - piplite, micropip, snowballstemmer, [voila-dashboards/voila](https://github.com/voila-dashboards/voila), streamlit, gradio app, 

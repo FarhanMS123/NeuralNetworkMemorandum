@@ -1,9 +1,9 @@
 # Core modules (mandatory)
 # jupyterlite-core==0.5.0
 jupyterlab~=4.3.4
-notebook~=7.3.2
+# notebook~=7.3.2
 
-libarchive-c >= 5.2
+# libarchive-c >= 5.2
 
 # Python kernel (optional)
 jupyterlite-pyodide-kernel==0.5.0

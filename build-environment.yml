@@ -11,6 +11,7 @@ dependencies:
   - jupyterlab~=4.3.4
   - python-libarchive-c >= 5.2
   - mamba == 1
+  - watchfiles
 
   # Jupyter Kernel
   - jupyterlite-pyodide-kernel==0.5.0     # Python kernel (optional)

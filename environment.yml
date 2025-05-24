@@ -17,12 +17,13 @@ dependencies:
   - jupyterlab-language-pack-fr-FR
   - jupyterlab-language-pack-zh-CN
 
-  # RTEs Media & Kernels
+  # RTEs Media, Kernels, and Mime Renderers
   - jupyterlab-fasta>=3.3.0,<4    # JupyterLab: Fasta file renderer (optional)
   - jupyterlab-geojson>=3.4.0,<4  # JupyterLab: Geojson file renderer (optional)
   - jupytext
 
   # IDE Extentions & Themes
+  # https://jupyterlab.readthedocs.io/en/latest/user/extensions.html#browsing-extensions-on-pypi
   - notebook~=7.3.2
   - jupyterlab-tour               # JupyterLab: guided tour (optional)
                                   #   TODO: re-enable after https://github.com/jupyterlab-contrib/jupyterlab-tour/issues/82

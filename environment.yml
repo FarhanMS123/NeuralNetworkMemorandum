@@ -1,8 +1,30 @@
 name: xeus-kernel
 channels:
+  # ? src: https://beta.mamba.pm/channels/emscripten-forge?tab=packages
+  # ? src: https://github.com/emscripten-forge/recipes
   - https://repo.mamba.pm/emscripten-forge
+
+  # ? src: https://beta.mamba.pm/channels/conda-forge?tab=packages
+  # * no-arch
   - conda-forge
 dependencies:
   - python=3.11
   - xeus-python
-  - ipycanvas
+  - xeus-r
+  - r-coursekata
+
+  # Language support (optional)
+  - jupyterlab-language-pack-fr-FR
+  - jupyterlab-language-pack-zh-CN
+
+  # RTEs Media & Kernels
+  - jupyterlab-fasta>=3.3.0,<4    # JupyterLab: Fasta file renderer (optional)
+  - jupyterlab-geojson>=3.4.0,<4  # JupyterLab: Geojson file renderer (optional)
+  - jupytext
+
+  # IDE Extentions & Themes
+  - notebook~=7.3.2
+  - jupyterlab-tour               # JupyterLab: guided tour (optional)
+                                  #   TODO: re-enable after https://github.com/jupyterlab-contrib/jupyterlab-tour/issues/82
+  - jupyterlab-night              # JupyterLab: dark theme
+  - jupyterlab_miami_nights       # JupyterLab: Miami nights theme (optional)

@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "donjayamanne.python-extension-pack",
+        "ms-toolsai.jupyter",
+        "redhat.vscode-yaml",
+        "aaron-bond.better-comments"
+    ]
+}

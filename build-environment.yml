@@ -2,15 +2,20 @@ name: build-env
 channels:
   - conda-forge
 dependencies:
+  # Core modules (mandatory)
   - python
   - pip
   - jupyter_server
   - jupyterlite-core >=0.5.0,<0.6
-  - jupyterlite-xeus>=3.0.0,<4
   
-  # - jupyterlite-pyodide-kernel
-
-  - python-libarchive-c
-  - jupyterlab_server
+  - jupyterlab~=4.3.4
+  - python-libarchive-c >= 5.2
   - mamba == 1
-  - notebook
+
+  # Jupyter Kernel
+  - jupyterlite-pyodide-kernel==0.5.0     # Python kernel (optional)
+  - jupyterlite-xeus>=3.0.0,<4
+  - jupyterlite-javascript-kernel==0.3.0  # JavaScript kernel (optional)
+  - jupyterlite-p5-kernel==0.1.0          # P5 kernel (optional)
+
+

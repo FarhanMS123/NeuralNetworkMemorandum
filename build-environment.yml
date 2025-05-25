@@ -42,5 +42,9 @@ dependencies:
 
   # Jupyter Kernel
   - jupyterlite-pyodide-kernel>=0.5.0     # Python kernel (optional)
+  - jupyterlite-xeus>=3.0.0,<4
+  - ipykernel
 
 
+  # Jupyter Extensions ##########################
+  - notebook~=7.3.2

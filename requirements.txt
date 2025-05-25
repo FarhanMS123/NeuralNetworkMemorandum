@@ -9,6 +9,7 @@ six
 
 # Widgets
 ipycanvas>=0.9.1  # Python: ipycanvas library for Jupyter notebooks (optional)
+ipydrawio
 
 # Numerical & Data Manipulation
 numpy

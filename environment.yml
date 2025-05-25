@@ -9,9 +9,14 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
+  - ipykernel
   - xeus-python
   - xeus-r
-  - r-coursekata
+  - r-coursekata        # https://coursekata.org/
+
+  # Kernel Extensions
+  - jupyterlite-xeus>=3.0.0,<4
+  - jupyterlite-javascript-kernel>=0.3.0  # JavaScript kernel (optional)
 
   # Language support (optional)
   - jupyterlab-language-pack-fr-FR
@@ -21,6 +26,7 @@ dependencies:
   - jupyterlab-fasta>=3.3.0,<4    # JupyterLab: Fasta file renderer (optional)
   - jupyterlab-geojson>=3.4.0,<4  # JupyterLab: Geojson file renderer (optional)
   - jupytext
+  - ipydrawio
 
   # IDE Extentions & Themes
   # https://jupyterlab.readthedocs.io/en/latest/user/extensions.html#browsing-extensions-on-pypi

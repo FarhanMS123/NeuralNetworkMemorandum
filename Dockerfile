@@ -1,8 +1,9 @@
 # docker build --no-cache -t inb . --debug --progress plain
 # docker run -it --rm -v "$(pwd)":/home/app condaforge/miniforge3
 # docker run -p 8080:80 inb
+# docker system prune -a -f
 
-FROM condaforge/miniforge3:latest as build
+FROM condaforge/miniforge3:latest AS build
 
 RUN mkdir -p /home/tmp
 
@@ -12,8 +13,8 @@ COPY . .
 RUN conda update -n base -c conda-forge conda mamba --yes
 RUN conda clean --all --yes
 
-RUN conda env update -n base -f build-environment.yml
-RUN conda env create -f environment.yml
+RUN conda env update -n base --file build-environment.yml
+# RUN conda env create --file environment.yml
 RUN conda run -n base python -m pip install -r requirements.txt
 
 # RUN TMPDIR=$(mktemp -d)
@@ -23,7 +24,7 @@ RUN conda run -n base python -m pip install -r requirements.txt
 
 RUN conda run -n base jupyter lite build --contents ./ --output-dir /home/dist
 
-FROM nginx as serve
+FROM nginx AS serve
 
 COPY --from=build /home/dist /usr/share/nginx/html
 

@@ -17,27 +17,28 @@ dependencies:
 
   # C Linked Libraries #########################
   
-  # - gcc
-  # - gcc_linux-64    # https://stackoverflow.com/questions/53426235/unable-to-install-gcc-using-anaconda
-  # - gxx_linux-64
-  - cxx-compiler    # https://stackoverflow.com/questions/69485181/how-to-install-g-on-conda-under-linux
-  - c-compiler      # https://anaconda.org/conda-forge/c-compiler/
-  - cmake
-  # - cmake-binary    # cmake and cmake-binary
-  # - pkg-config
-  - pkgconfig       # https://github.com/conda-forge/pkgconfig-feedstock
-  - zlib            # https://github.com/conda-forge/zlib-feedstock
-  - libzlib
-  # - zlib-wapi
-  # - libzlib-wapi
+  # # - gcc
+  # # - gcc_linux-64    # https://stackoverflow.com/questions/53426235/unable-to-install-gcc-using-anaconda
+  # # - gxx_linux-64
+  # - cxx-compiler    # https://stackoverflow.com/questions/69485181/how-to-install-g-on-conda-under-linux
+  # - c-compiler      # https://anaconda.org/conda-forge/c-compiler/
+  # - cmake
+  # # - cmake-binary    # cmake and cmake-binary
+  # # - pkg-config
+  # - pkgconfig       # https://github.com/conda-forge/pkgconfig-feedstock
+  # - zlib            # https://github.com/conda-forge/zlib-feedstock
+  # - libzlib
+  # # - zlib-wapi
+  # # - libzlib-wapi
 
-  # Dynamic Linked Libraries
-  - cairo         # https://github.com/conda-forge/cairo-feedstock
-  # - r-cairo       # https://github.com/conda-forge/r-cairo-feedstock
-  - expat         # https://github.com/conda-forge/expat-feedstock
-  - libexpat
-  - xorg-xproto   # https://github.com/conda-forge/xorg-xproto-feedstock
-  - xorg-kbproto  # https://github.com/conda-forge/xorg-kbproto-feedstock
+  # Dynamic Linked Libraries ####################
+
+  # - cairo         # https://github.com/conda-forge/cairo-feedstock
+  # # - r-cairo       # https://github.com/conda-forge/r-cairo-feedstock
+  # - expat         # https://github.com/conda-forge/expat-feedstock
+  # - libexpat
+  # - xorg-xproto   # https://github.com/conda-forge/xorg-xproto-feedstock
+  # - xorg-kbproto  # https://github.com/conda-forge/xorg-kbproto-feedstock
 
   # Jupyter Kernel
   - jupyterlite-pyodide-kernel>=0.5.0     # Python kernel (optional)

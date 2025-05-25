@@ -10,6 +10,11 @@ RUN mkdir -p /home/tmp
 WORKDIR /home/app
 COPY . .
 
+ENV DEBIAN_FRONTEND=noninteractive
+
+# RUN apt update -y
+# RUN apt-get install -y libcairo2-dev pkg-config python3-dev
+
 RUN conda update -n base -c conda-forge conda mamba --yes
 RUN conda clean --all --yes
 

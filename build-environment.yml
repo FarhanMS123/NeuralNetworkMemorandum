@@ -43,8 +43,11 @@ dependencies:
   # Jupyter Kernel
   - jupyterlite-pyodide-kernel>=0.5.0     # Python kernel (optional)
   - jupyterlite-xeus>=3.0.0,<4
+  # - jupyterlite-xeus-r
   - ipykernel
+  - r-coursekata        # https://coursekata.org/
 
 
   # Jupyter Extensions ##########################
   - notebook~=7.3.2
+  - jupyterlab_miami_nights       # JupyterLab: Miami nights theme (optional)

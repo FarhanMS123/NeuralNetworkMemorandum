@@ -20,7 +20,7 @@ RUN conda clean --all --yes
 # RUN conda config --set solver mamba
 
 RUN mamba env update -n base --file build-environment.yml --yes
-# RUN mamba env update -n base --file environment.yml                 # no --yes, because of mamba==1
+RUN mamba env update -n base --file environment.yml                 # no --yes, because of mamba==1
 RUN mamba run -n base python -m pip install -r requirements.txt --root-user-action ignore
 
 # RUN TMPDIR=$(mktemp -d)

@@ -3,6 +3,7 @@
         "ms-toolsai.jupyter",
         "demystifying-javascript.python-extensions-pack",
         "ms-toolsai.vscode-jupyter-powertoys",
-        "ms-toolsai.jupyter-hub"
+        "ms-toolsai.jupyter-hub",
+        "hediet.vscode-drawio"
     ]
 }

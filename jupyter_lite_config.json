@@ -1,0 +1,8 @@
+{
+  "ContentsManager": {
+    "allow_hidden": true
+  },
+  "LiteBuildConfig": {
+    "extra_ignore_contents": []
+  }
+}

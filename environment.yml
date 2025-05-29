@@ -1,0 +1,35 @@
+name: xeus-kernel
+channels:
+  # ? src: https://beta.mamba.pm/channels/emscripten-forge?tab=packages
+  # ? src: https://github.com/emscripten-forge/recipes
+  - https://repo.mamba.pm/emscripten-forge
+
+  # ? src: https://beta.mamba.pm/channels/conda-forge?tab=packages
+  # * no-arch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - xeus-python
+  - xeus-r
+
+  # Kernel Extensions
+  - jupyterlite-javascript-kernel>=0.3.0  # JavaScript kernel (optional)
+
+  # Language support (optional)
+  - jupyterlab-language-pack-fr-FR
+  - jupyterlab-language-pack-zh-CN
+
+  # RTEs Media, Kernels, and Mime Renderers
+  - jupyterlab-fasta>=3.3.0,<4    # JupyterLab: Fasta file renderer (optional)
+  - jupyterlab-geojson>=3.4.0,<4  # JupyterLab: Geojson file renderer (optional)
+  - jupyterlab-katex              # https://github.com/jupyterlab/jupyter-renderers
+  - jupyterlab-mathjax2
+  - jupyterlab-vega3
+  
+  - jupytext
+
+  # IDE Extentions & Themes
+  # https://jupyterlab.readthedocs.io/en/latest/user/extensions.html#browsing-extensions-on-pypi
+  - jupyterlab-tour               # JupyterLab: guided tour (optional)
+                                  #   TODO: re-enable after https://github.com/jupyterlab-contrib/jupyterlab-tour/issues/82
+  - jupyterlab-night              # JupyterLab: dark theme

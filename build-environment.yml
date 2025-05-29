@@ -46,7 +46,11 @@ dependencies:
   - jupyterlite-xeus>=3.0.0,<4
   # - jupyterlite-xeus-r
   - ipykernel
+
   - r-coursekata        # https://coursekata.org/
+  - nodejs
+  - nodegyp
+  - go
 
 
   # Jupyter Extensions ##########################

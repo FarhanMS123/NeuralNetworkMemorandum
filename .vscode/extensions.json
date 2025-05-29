@@ -4,6 +4,9 @@
         "demystifying-javascript.python-extensions-pack",
         "ms-toolsai.vscode-jupyter-powertoys",
         "ms-toolsai.jupyter-hub",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "ms-python.python",
+        "donjayamanne.python-extension-pack",
+        "redhat.vscode-yaml"
     ]
 }

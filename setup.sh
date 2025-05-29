@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DEBIAN_FRONTEND=noninteractive
+
 cd ~
 
 # https://docs.conda.io/projects/conda/en/24.9.x/user-guide/install/linux.html
@@ -25,19 +27,22 @@ rm forge3-Linux-x86_64.sh
 # conda init
 . ~/.bashrc
 
-# conda install -c conda-forge jupyter
-conda activate base
-# conda install -c conda-forge jupyter ipykernel
+# conda config --set auto_activate_base true
+mamba activate base
+conda install -n base -c conda-forge conda mamba micromamba conda-libmamba-solver --yes
+
+mamba env update -n base --file build-environment.yml --yes
+mamba env update -n base --file environment.yml
+mamba run -n base python -m pip install -r requirements.txt --root-user-action ignore
+
+# mamba run -n base jupyter lite build --contents ./ --output-dir /home/dist
 
 # https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
-
 # https://dev.to/worldlinetech/a-guide-to-nodejs-notebooks-410c
-conda install conda-forge::nodejs conda-forge::node-gyp
 npm install -g ijavascript
 ijsinstall
 
 # https://medium.com/@joloiuy/exploring-the-go-language-with-jupyter-notebooks-796ca36f8d0c
-conda install conda-forge::go
 go install github.com/janpfeifer/gonb@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/gopls@latest

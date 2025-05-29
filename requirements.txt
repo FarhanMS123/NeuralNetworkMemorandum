@@ -32,7 +32,10 @@ ipympl>=0.8.2  # Python: interative Matplotlib library for Jupyter notebooks (op
 matplotlib
 seaborn
 ipyleaflet  # Python: ipyleaflet library for Jupyter notebooks (optional)
-plotly>=5,<6  # Python: plotting libraries (optional)
+# plotly>=5,<6  # Python: plotting libraries (optional)
+# cufflinks
+# chart-studio
+
 # bqplot
 # altair[all]
 # pydot

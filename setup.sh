@@ -27,9 +27,9 @@ rm forge3-Linux-x86_64.sh
 # conda init
 . ~/.bashrc
 
-# conda config --set auto_activate_base true
+conda install -n base -c conda-forge conda conda-libmamba-solver --yes
+# conda config --set auto_activate_base false
 mamba activate base
-conda install -n base -c conda-forge conda mamba micromamba conda-libmamba-solver --yes
 
 mamba env update -n base --file build-environment.yml --yes
 mamba env update -n base --file environment.yml
@@ -39,8 +39,8 @@ mamba run -n base python -m pip install -r requirements.txt --root-user-action i
 
 # https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
 # https://dev.to/worldlinetech/a-guide-to-nodejs-notebooks-410c
-npm install -g ijavascript
-ijsinstall
+# npm install -g ijavascript
+# ijsinstall
 
 # https://medium.com/@joloiuy/exploring-the-go-language-with-jupyter-notebooks-796ca36f8d0c
 go install github.com/janpfeifer/gonb@latest

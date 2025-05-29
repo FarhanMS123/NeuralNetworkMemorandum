@@ -13,6 +13,7 @@ dependencies:
   - jupyterlab~=4.3.4
   - python-libarchive-c >= 5.2
   - mamba == 1
+  - micromamba == 1
   - rust
   - watchfiles
 
@@ -48,8 +49,11 @@ dependencies:
   - ipykernel
 
   - r-coursekata        # https://coursekata.org/
-  - nodejs
-  - nodegyp
+
+  # - nodejs
+  # - nodegyp
+  # - libunwind
+
   - go
 
 

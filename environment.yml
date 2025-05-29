@@ -22,6 +22,10 @@ dependencies:
   # RTEs Media, Kernels, and Mime Renderers
   - jupyterlab-fasta>=3.3.0,<4    # JupyterLab: Fasta file renderer (optional)
   - jupyterlab-geojson>=3.4.0,<4  # JupyterLab: Geojson file renderer (optional)
+  - jupyterlab-katex              # https://github.com/jupyterlab/jupyter-renderers
+  - jupyterlab-mathjax2
+  - jupyterlab-vega3
+  
   - jupytext
 
   # IDE Extentions & Themes

@@ -7,6 +7,7 @@
         "hediet.vscode-drawio",
         "ms-python.python",
         "donjayamanne.python-extension-pack",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "pomdtr.excalidraw-editor"
     ]
 }

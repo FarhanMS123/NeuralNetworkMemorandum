@@ -24,7 +24,8 @@ jobs:
           push: false
           tags: jupyterlite
       
-      - name: Copy
+      - name: Copy from inside Dockerfile
+        run: docker cp jupyterlite:/usr/share/nginx/html ./dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

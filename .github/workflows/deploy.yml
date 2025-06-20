@@ -22,11 +22,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: jupyterlite
+          tags: jupyterlite-c-b
           load: true
       
       - name: Copy from inside Dockerfile
-        run: docker cp jupyterlite:/usr/share/nginx/html ./dist
+        run: docker cp docker.io/library/jupyterlite-c-b:/usr/share/nginx/html ./dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -23,6 +23,7 @@ jobs:
         with:
           push: false
           tags: jupyterlite
+          load: true
       
       - name: Copy from inside Dockerfile
         run: docker cp jupyterlite:/usr/share/nginx/html ./dist

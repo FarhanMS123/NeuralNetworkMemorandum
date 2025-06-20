@@ -26,7 +26,10 @@ jobs:
           load: true
       
       - name: Copy from inside Dockerfile
-        run: docker cp docker.io/library/jupyterlite-c-b:/usr/share/nginx/html ./dist
+        run: |
+          docker container create --name jupyterlite-c-b-c jupyterlite-c-b
+          docker cp jupyterlite-c-b-c:/usr/share/nginx/html ./dist
+          docker container rm jupyterlite-c-b-c
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
